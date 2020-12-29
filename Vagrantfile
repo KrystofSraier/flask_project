@@ -17,6 +17,11 @@ end
 
 # public network => bridged
  config.vm.network "public_network" 
- 
+
+#magic
+
+config.vm.provision :shell, :path=> "bootstrap.sh"
+
+
  end
  

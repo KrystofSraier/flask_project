@@ -1,0 +1,20 @@
+{% extends "_main.jinja" %}
+
+{% block title %} Login {% endblock %}
+
+{% block main %}
+
+<form action="{{ url_for("admin.login_user") }}" method="post">
+    {{ form.csrf_token }}
+    <p>
+        {{ form.username.label }}
+        {{ form.username() }}
+    </p>
+    <p>
+        {{ form.password.label }}
+        {{ form.password() }}
+    </p>
+    <input type="submit" value="login">
+</form>
+
+{% endblock %}

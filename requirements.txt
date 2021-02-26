@@ -28,4 +28,4 @@ Werkzeug==1.0.1
 WTForms==2.3.3
 celery==5.0.5
 uWSGI==2.0.19.1
-psychopq2==2.8.6
+psycopg2==2.8.6
